@@ -3,8 +3,8 @@
 SAMPLE
 ----------------------------------------
 
-Challenge: Write function named test that returns the string "This Works!".
-Solution: This one has already been complete for you.
+Challenge: Write function named test that returns the string "This Works!". 
+Solution: This one has already been complete for you. 
 
 */
 
@@ -24,14 +24,11 @@ Write function named sum that will take an array of numbers and return the sum o
 
 Example: if you pass it [1,2,3] then it should return 6 (which is 1 + 2 + 3)
 */
-function sum(myArray){
-  var result = 0;
-  for(var i=0; i < myArray.length; i++){
-    result += myArray[i];
-  }
-  return result;
-}
-sum([1, 2, 3]);
+
+
+
+
+
 
 
 
@@ -45,23 +42,12 @@ Write function named doubleNumbers that will take an array of numbers and return
 
 Example: if you pass it [1,2,3] then it should return [2,4,6]
 */
-function doubleNumbers(myArray){
-  var results = [];
-  for(var i=0; i < myArray.length; i++){
-    results.push(myArray[i] * 2);
-  }
-  return results;
-}
-doubleNumbers([1, 2, 3]);
 
-/*function doubleNumbers(myArray){
-  var results = [];
-  for(var i=0; i < myArray.length; i++){
-    results[i] = myArray[i] * 2;
-  }
-  return results;
-}
-doubleNumbers([1, 2, 3]);*/
+
+
+
+
+
 
 
 
@@ -78,14 +64,12 @@ Examples:
 - if you call multiplyNumbers([1,2,3], 0) you'd get [0,0,0]
 - if you call multiplyNumbers([1,2,3], 5) you'd get [5,10,15]
 */
-function multiplyNumbers(myArray, multiplier){
-  var results = [];
-  for(var i=0; i < myArray.length; i++){
-    results[i] = myArray[i] * multiplier;
-  }
-  return results;
-}
-multiplyNumbers([1,2,3], 0);
+
+
+
+
+
+
 
 
 
@@ -99,23 +83,14 @@ Write function named doubleLetters that will take a string and double every lett
 Example: if you pass it "abc" then it should return "aabbcc"
 */
 
-  function doubleLetters(str){
-    var results = "";
-    for(var i = 0; i < str.length; i++){
-      results += str.charAt(i) + str.charAt(i);
-    }
-    return results;
-  }
 
-  /*function doubleLetters(str){
-    var results = [];
-    var i = 0;
-    while(i < str.length){
-      results += str.charAt(i) + str.charAt(i);
-      i++;
-    }
-    return results;
-  }*/
+
+
+
+
+
+
+
 
 /*
 ----------------------------------------
@@ -129,25 +104,6 @@ Example: if you pass it ["a", "b", "c"] and ["d", "e", "f"] then it should retur
 NOTE: you can assume each input will be the same length
 */
 
-/*function interleave(arr1, arr2){
-  var results;
-  if(arr1.length !== 0 || arr2.length !== 0){
-    results = arr1.concat(arr2);
-  }else{
-    results = [];
-  }
-  return results;
-}
-interleave(["a", "b", "c"],["d", "e", "f"]);*/
-
-function interleave(arr1, arr2){
-  var result = [];
-  for(var i = 0; i < arr1.length; i++){
-     result.push(arr1[i]);
-     result.push(arr2[i]);
-  }
-  return result;
-}
 
 
 
@@ -838,4 +794,4 @@ If you pass {1999: 4036, 2000: 7654} and 4036, it should return true
 
 
 
-//
+// 
