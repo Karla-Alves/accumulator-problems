@@ -191,11 +191,6 @@ function flipArray(arr1){
 flipArray(["quick", "brown", "fox"]);
 
 
-
-
-
-
-
 /*
 ----------------------------------------
 CHALLENGE
@@ -208,7 +203,18 @@ Example:
 If you pass it [[2014, "Horse"], [2015, "Sheep"]] then it should return { 2014: "Horse", 2015: "Sheep" }
 
 */
+function arraysToObject(arr1){
+  var result = {};
 
+  for(var i = 0; i < arr1.length; i++){
+    result[arr1[i][0]] = arr1[i][1];
+    // resultKey = arr1[i][0];
+    // resultValue = arr1[i][1];
+    // result[resultKey] = resultValue;
+  }
+  return result;
+}
+arraysToObject([[2014, "Horse"], [2015, "Sheep"]]);
 
 
 
