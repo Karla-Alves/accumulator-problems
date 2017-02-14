@@ -217,12 +217,6 @@ function arraysToObject(arr1){
 arraysToObject([[2014, "Horse"], [2015, "Sheep"]]);
 
 
-
-
-
-
-
-
 /*
 ----------------------------------------
 CHALLENGE
@@ -234,17 +228,14 @@ Example:
 
 If you pass it "hello" then it should return "olleh"
 */
-
-
-
-
-
-
-
-
-
-
-
+function reverseString(str){
+  var result = " ";
+  for(var i = str.length - 1; i >= 0; i--){
+    result += str[i];
+  }
+  return result;
+}
+reverseString("Hello");
 
 /*
 ----------------------------------------
