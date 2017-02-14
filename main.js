@@ -150,14 +150,6 @@ function interleave(arr1, arr2){
 }
 
 
-
-
-
-
-
-
-
-
 /*
 ----------------------------------------
 CHALLENGE
@@ -167,9 +159,14 @@ Write function named createRange that will take a number and a default value and
 
 Example: if you pass it 4 and "Hello" then it should return ["Hello", "Hello", "Hello", "Hello"]
 */
-
-
-
+function createRange(count, str){
+  var result = [];
+  for(var i = 0; i < count; i++){
+     result.push(str);
+  }
+  return result;
+}
+createRange(6, 'Hello');
 
 
 
