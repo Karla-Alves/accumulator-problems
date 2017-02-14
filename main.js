@@ -170,8 +170,6 @@ createRange(6, 'Hello');
 
 
 
-
-
 /*
 ----------------------------------------
 CHALLENGE
@@ -183,7 +181,14 @@ Example:
 
 If you pass it ["quick", "brown", "fox"] then it should return { "quick": 0, "brown": 1, "fox": 2 }
 */
-
+function flipArray(arr1){
+  var result = {};
+  for(var i = 0; i < arr1.length; i++){
+    result[arr1[i]] = i;
+  }
+  return result;
+}
+flipArray(["quick", "brown", "fox"]);
 
 
 
