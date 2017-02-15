@@ -229,7 +229,7 @@ Example:
 If you pass it "hello" then it should return "olleh"
 */
 function reverseString(str){
-  var result = " ";
+  var result = "";
   for(var i = str.length - 1; i >= 0; i--){
     result += str[i];
   }
@@ -250,12 +250,21 @@ If you pass it "haha" then it should return true because "ha" (the first half) e
 If you pass it "yay" then it should return false because it's odd
 If you pass it "heehaw" then it should return false because "hee" doesn't equal "haw"
 */
+function repeats(str){
+  var result = " ";
 
-
-
-
-
-
+  for(var i = 0; i < str.length; i++){
+    if((str.substr(str[i], (str.length/2)) === (str.substr(str.length/2, str.length - 1)))){
+      return true;
+    }else if(str.length % 2 !== 0){
+      return false;
+    }else/*((str.substr(str[i], str.length) !== (str.substr(str[i], str.length - 1))))*/{
+      return false;
+    }
+  }
+  return result;
+}
+repeats("haha");
 
 
 /*
