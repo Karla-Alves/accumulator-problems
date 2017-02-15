@@ -278,12 +278,14 @@ Example:
 
 If you pass it "abcdef" then it should return "ace" because those represent every other letter
 */
-
-
-
-
-
-
+function everyOther(str){
+  var result = "";
+  for(var i = 0; i < str.length; i+=2){
+    result += str.charAt(i);
+  }
+  return result;
+}
+everyOther('abcdef');
 
 
 /*
